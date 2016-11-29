@@ -11,7 +11,7 @@ namespace Deinok.SQL.ConnectionString {
 
 		string Host { get; set; }
 
-		int ?Port { get; set; }
+		int? Port { get; set; }
 
 		string UserId { get; set; }
 

@@ -18,5 +18,19 @@ namespace Deinok.SQL.ConnectionString{
 
 		public abstract string GenerateConnectionString();
 
+		protected string GenerateKeyValue(string key,string value) {
+			if (value != null) {
+				return String.Format("{0}={1};", key, value);
+			}
+			return String.Empty;
+		}
+
+		protected string GenerateKeyValue(string key, int? value) {
+			if (value != null) {
+				return String.Format("{0}={1};", key, value);
+			}
+			return String.Empty;
+		}
+
 	}
 }
