@@ -1,10 +1,7 @@
 ﻿{
-	"title": "Deinok.SQL.ConnectionString",
-	"description": "ConnectionString Library",
 	"authors": [
 		"Raul Hidalgo Caballero"
 	],
-	"language": "en",
 	"buildOptions": {
 		"optimize": true,
 		"xmlDoc": true
@@ -12,10 +9,27 @@
 	"dependencies": {
 		"NETStandard.Library": "1.6.1"
 	},
+	"description": "ConnectionString Library",
 	"frameworks": {
 		"netstandard1.6": {
 			"imports": "dnxcore50"
 		}
 	},
+	"language": "en",
+	"packOptions": {
+		"owners": [
+			"Raul Hidalgo Caballero"
+		],
+		"repository": {
+			"type": "git",
+			"url": "https://github.com/deinok/Deinok.SQL.ConnectionString"
+		},
+
+		"requireLicenseAcceptance": true,
+		"tags": [
+			"SQL"
+		]
+	},
+	"title": "Deinok.SQL.ConnectionString",
 	"version": "1.0.0-*"
 }
