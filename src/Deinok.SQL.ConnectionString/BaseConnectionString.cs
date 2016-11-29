@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace Deinok.SQL.ConnectionString{
-    public abstract class BaseConnectionString:IConnectionString{
+
+    public abstract class BaseConnectionString : IConnectionString{
 
 		public string Database { get; set; }
 
@@ -18,14 +19,14 @@ namespace Deinok.SQL.ConnectionString{
 
 		public abstract string GenerateConnectionString();
 
-		protected string GenerateKeyValue(string key,string value) {
+		protected internal string GenerateKeyValue(string key,string value) {
 			if (value != null) {
 				return String.Format("{0}={1};", key, value);
 			}
 			return String.Empty;
 		}
 
-		protected string GenerateKeyValue(string key, int? value) {
+		protected internal string GenerateKeyValue(string key, int? value) {
 			if (value != null) {
 				return String.Format("{0}={1};", key, value);
 			}
