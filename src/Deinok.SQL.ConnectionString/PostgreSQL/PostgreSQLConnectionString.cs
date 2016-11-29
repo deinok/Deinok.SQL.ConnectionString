@@ -5,6 +5,6 @@ using System.Threading.Tasks;
 
 namespace Deinok.SQL.ConnectionString.PostgreSQL{
 
-    public class PostgreSQLConnectionString:BaseConnectionString{
+    public class PostgreSQLConnectionString : BaseConnectionString{
     }
 }

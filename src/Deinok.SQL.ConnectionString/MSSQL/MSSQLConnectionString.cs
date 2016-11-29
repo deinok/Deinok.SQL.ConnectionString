@@ -5,6 +5,6 @@ using System.Threading.Tasks;
 
 namespace Deinok.SQL.ConnectionString.MSSQL{
 
-    public class MSSQLConnectionString:BaseConnectionString{
+    public class MSSQLConnectionString : BaseConnectionString{
     }
 }
