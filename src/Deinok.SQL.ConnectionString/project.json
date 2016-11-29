@@ -1,4 +1,10 @@
 ﻿{
+	"title": "Deinok.SQL.ConnectionString",
+	"description": "ConnectionString Library",
+	"authors": [
+		"Raul Hidalgo Caballero"
+	],
+	"language": "en",
 	"buildOptions": {
 		"optimize": true,
 		"xmlDoc": true
