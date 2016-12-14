@@ -1,5 +1,4 @@
 ﻿{
-	"copyright": "Raul Hidalgo Caballero",
 	"authors": [
 		"Raul Hidalgo Caballero"
 	],
@@ -7,17 +6,19 @@
 		"optimize": true,
 		"xmlDoc": true
 	},
+	"copyright": "Raul Hidalgo Caballero",
 	"dependencies": {
 		"NETStandard.Library": "1.6.1"
 	},
 	"description": "ConnectionString Library",
 	"frameworks": {
-		"netstandard1.6": {
+		"netstandard1.1": {
 			"imports": "dnxcore50"
 		}
 	},
 	"language": "en",
 	"packOptions": {
+		"licenseUrl": "https://raw.githubusercontent.com/deinok/Deinok.SQL.ConnectionString/master/LICENCE.txt",
 		"owners": [
 			"Raul Hidalgo Caballero"
 		],
@@ -25,12 +26,11 @@
 			"type": "git",
 			"url": "https://github.com/deinok/Deinok.SQL.ConnectionString"
 		},
-
 		"requireLicenseAcceptance": true,
 		"tags": [
 			"SQL"
 		]
 	},
 	"title": "Deinok.SQL.ConnectionString",
-	"version": "1.0.0-*"
+	"version": "1.0.1-*"
 }
