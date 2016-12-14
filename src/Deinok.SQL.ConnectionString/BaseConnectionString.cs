@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Deinok.SQL.ConnectionString{
+namespace Deinok.SQL.ConnectionString {
 
-    public abstract class BaseConnectionString : IConnectionString{
+	public abstract class BaseConnectionString : IConnectionString{
 
 		public string Database { get; set; }
 
