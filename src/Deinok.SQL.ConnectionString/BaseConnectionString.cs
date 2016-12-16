@@ -30,5 +30,17 @@ namespace Deinok.SQL.ConnectionString {
 			return String.Empty;
 		}
 
+		[AttributeUsage(AttributeTargets.Property)]
+		protected class ConnectionStringKeywordNameAttribute : System.Attribute {
+
+			private readonly string keyword;
+
+			public ConnectionStringKeywordNameAttribute(string keyword) {
+				this.keyword = keyword;
+			}
+
+		}
+
 	}
+
 }
