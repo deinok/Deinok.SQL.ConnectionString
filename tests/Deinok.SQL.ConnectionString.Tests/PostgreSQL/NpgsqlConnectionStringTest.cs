@@ -21,7 +21,7 @@ namespace Deinok.SQL.ConnectionString.Tests.PostgreSQL{
 			};
 
 			Assert.Equal(
-				"Server=127.0.0.1;Port=5432;Database=myDataBase;User Id=myUsername; Password = myPassword; ", 
+				"Server=127.0.0.1;Port=5432;Database=myDataBase;User Id=myUsername;Password=myPassword;", 
 				connectionString.GenerateConnectionString()
 			);
 		}
