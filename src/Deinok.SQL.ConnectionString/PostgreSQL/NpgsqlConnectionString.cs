@@ -7,6 +7,14 @@ namespace Deinok.SQL.ConnectionString.PostgreSQL {
 	/// </summary>
 	public class NpgsqlConnectionString : BaseConnectionString{
 
+		[ConnectionStringSerializeName("Server")]
+		public new string Host { get; set; }
+
+		public new int? Port { get; set; }
+		public new string Database { get; set; }
+		public new string UserId { get; set; }
+		public new string Password { get; set; }
+
 		public bool? IntegratedSecurity { get; set; }
 		public int? CommandTimeout { get; set; }
 		public int? ConnectionTimeout { get; set; }
