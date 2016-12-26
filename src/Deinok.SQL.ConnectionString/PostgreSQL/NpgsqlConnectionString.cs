@@ -1,7 +1,7 @@
 ﻿namespace Deinok.SQL.ConnectionString.PostgreSQL {
 
 	/// <summary>
-	/// https://www.connectionstrings.com/postgresql/#npgsql
+	/// https://www.connectionstrings.com/npgsql/
 	/// </summary>
 	public class NpgsqlConnectionString : BaseConnectionString{
 
