@@ -23,6 +23,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Deinok.SQL.ConnectionString
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Deinok.SQL.ConnectionString.Tests", "tests\Deinok.SQL.ConnectionString.Tests\Deinok.SQL.ConnectionString.Tests.xproj", "{393A3B5B-0851-4EBF-AE01-43B1AFBAECD7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{09EBD908-F6B3-4FB9-8A8A-44416A064D12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5698D8B4-0133-4366-9583-063BF8D346F8} = {579BB1E3-9711-4E9D-A1AB-4F59218C3A55}
-		{393A3B5B-0851-4EBF-AE01-43B1AFBAECD7} = {579BB1E3-9711-4E9D-A1AB-4F59218C3A55}
+		{393A3B5B-0851-4EBF-AE01-43B1AFBAECD7} = {09EBD908-F6B3-4FB9-8A8A-44416A064D12}
 	EndGlobalSection
 EndGlobal
