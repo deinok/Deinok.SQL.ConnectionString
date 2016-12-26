@@ -30,6 +30,13 @@ namespace Deinok.SQL.ConnectionString {
 			return String.Empty;
 		}
 
+		protected internal string GenerateKeyValue(string key,bool? value) {
+			if (value != null) {
+				return String.Format("{0}={1};", key, value.ToString().ToLower());
+			}
+			return String.Empty;
+		}
+
 		[AttributeUsage(AttributeTargets.Property)]
 		protected class ConnectionStringKeywordNameAttribute : System.Attribute {
 
