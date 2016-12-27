@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Deinok.SQL.ConnectionString.PostgreSQL {
+﻿namespace Deinok.SQL.ConnectionString.PostgreSQL {
 
 	/// <summary>
 	/// https://www.connectionstrings.com/npgsql/
@@ -10,45 +8,50 @@ namespace Deinok.SQL.ConnectionString.PostgreSQL {
 		[ConnectionStringSerializeName("Server")]
 		public new string Host { get; set; }
 
+		[ConnectionStringSerializeName("Port")]
 		public new int? Port { get; set; }
+
+		[ConnectionStringSerializeName("Database")]
 		public new string Database { get; set; }
+
+		[ConnectionStringSerializeName("User Id")]
 		public new string UserId { get; set; }
+
+		[ConnectionStringSerializeName("Password")]
 		public new string Password { get; set; }
 
+		[ConnectionStringSerializeName("Integrated Security")]
 		public bool? IntegratedSecurity { get; set; }
+
+		[ConnectionStringSerializeName("CommandTimeout")]
 		public int? CommandTimeout { get; set; }
+
+		[ConnectionStringSerializeName("Timeout")]
 		public int? ConnectionTimeout { get; set; }
+
+		[ConnectionStringSerializeName("Protocol")]
 		public int? Protocol { get; set; }
+
+		[ConnectionStringSerializeName("SSL")]
 		public bool? SSL { get; set; }
+
+		[ConnectionStringSerializeName("SslMode")]
 		public SslMode? SSLMode { get; set; }
+
+		[ConnectionStringSerializeName("Pooling")]
 		public bool? Pooling { get; set; }
+
+		[ConnectionStringSerializeName("MinPoolSize")]
 		public int? MinPoolSize { get; set; }
+
+		[ConnectionStringSerializeName("MaxPoolSize")]
 		public int? MaxPoolSize { get; set; }
+
+		[ConnectionStringSerializeName("ConnectionLifeTime")]
 		public int? ConnectionLifeTime { get; set; }
 
 		public override string GenerateConnectionString() {
-			string result = "";
-
-			result += this.GenerateKeyValue("Server", this.Host);
-			result += this.GenerateKeyValue("Port", this.Port);
-			result += this.GenerateKeyValue("Database", this.Database);
-			result += this.GenerateKeyValue("User Id", this.UserId);
-			result += this.GenerateKeyValue("Password", this.Password);
-			result += this.GenerateKeyValue("Integrated Security", this.IntegratedSecurity);
-			result += this.GenerateKeyValue("CommandTimeout", this.CommandTimeout);
-			result += this.GenerateKeyValue("Timeout", this.ConnectionTimeout);
-			result += this.GenerateKeyValue("Protocol", this.Protocol);
-			result += this.GenerateKeyValue("SSL", this.SSL);
-			if (this.SSLMode != null) {
-				result += String.Format("{0}={1};", "SslMode", this.SSLMode.ToString());
-			}
-
-			result += this.GenerateKeyValue("Pooling", this.Pooling);
-			result += this.GenerateKeyValue("MinPoolSize", this.MinPoolSize);
-			result += this.GenerateKeyValue("MaxPoolSize", this.MaxPoolSize);
-			result += this.GenerateKeyValue("ConnectionLifeTime", this.ConnectionLifeTime);
-
-			return result;
+			return ConnectionStringSerializer.Serialize<NpgsqlConnectionString>(this);
 		}
 
 		public enum SslMode{

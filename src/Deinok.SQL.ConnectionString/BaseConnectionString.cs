@@ -39,34 +39,6 @@ namespace Deinok.SQL.ConnectionString {
 			return String.Empty;
 		}
 
-		public string SerializeConnectionString<T>(T connectionString) where T:BaseConnectionString {
-			IEnumerable<PropertyInfo> properties = ConnectionStringSerializeNameAttribute.GetProperties<T>(connectionString);
-			foreach(PropertyInfo property in properties) {
-				
-			}
-			return String.Empty;
-		}
-
-		[AttributeUsage(AttributeTargets.Property)]
-		protected class ConnectionStringSerializeNameAttribute : System.Attribute {
-
-			public readonly string name;
-
-			public ConnectionStringSerializeNameAttribute(string name) {
-				this.name = name;
-			}
-
-			public static IEnumerable<PropertyInfo> GetProperties<T>(T connectionString) where T : BaseConnectionString {
-				return typeof(T).GetRuntimeProperties();
-			}
-
-			public static string GetSerializeName(PropertyInfo propertyInfo) {
-				ConnectionStringSerializeNameAttribute connectionStringSerializeNameAttribute = propertyInfo.GetCustomAttribute<ConnectionStringSerializeNameAttribute>();
-				return connectionStringSerializeNameAttribute.name;
-			}
-
-		}
-
 	}
 
 }
