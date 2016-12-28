@@ -3,6 +3,7 @@
 		"Raul Hidalgo Caballero"
 	],
 	"buildOptions": {
+		"languageVersion": "csharp6",
 		"optimize": true,
 		"xmlDoc": true
 	},
@@ -12,7 +13,7 @@
 	},
 	"description": "ConnectionString Library",
 	"frameworks": {
-		"netstandard1.6": {
+		"netstandard1.1": {
 			"imports": "dnxcore50"
 		}
 	},
@@ -29,7 +30,8 @@
 		"requireLicenseAcceptance": true,
 		"summary": "A simple implementation of https://www.connectionstrings.com/",
 		"tags": [
-			"SQL"
+			"SQL",
+			"Connection String"
 		]
 	},
 	"title": "Deinok.SQL.ConnectionString",

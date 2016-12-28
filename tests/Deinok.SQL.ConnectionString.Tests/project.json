@@ -14,11 +14,7 @@
 		"xunit": "2.2.0-beta4-build3444"
 	},
 	"frameworks": {
-		"netcoreapp1.1": {
-			"imports": [
-				"dnxcore50"
-			]
-		}
+		"netcoreapp1.1": {}
 	},
 	"testRunner": "xunit",
 	"version": "1.0.0-*"
