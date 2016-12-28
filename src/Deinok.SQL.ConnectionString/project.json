@@ -27,6 +27,7 @@
 			"url": "https://github.com/deinok/Deinok.SQL.ConnectionString"
 		},
 		"requireLicenseAcceptance": true,
+		"summary": "A simple implementation of https://www.connectionstrings.com/",
 		"tags": [
 			"SQL"
 		]
