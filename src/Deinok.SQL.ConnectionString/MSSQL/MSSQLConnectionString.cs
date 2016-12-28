@@ -1,10 +1,9 @@
-﻿using System;
-
-namespace Deinok.SQL.ConnectionString.MSSQL {
+﻿namespace Deinok.SQL.ConnectionString.MSSQL {
 
 	public class MSSQLConnectionString : BaseConnectionString{
+
 		public override string GenerateConnectionString() {
-			throw new NotImplementedException();
+			return ConnectionStringSerializer.Serialize(this);
 		}
 
 	}

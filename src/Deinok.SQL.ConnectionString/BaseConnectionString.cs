@@ -1,43 +1,23 @@
-﻿using System;
-using System.Reflection;
-using System.Collections.Generic;
-
-namespace Deinok.SQL.ConnectionString {
+﻿namespace Deinok.SQL.ConnectionString {
 
 	public abstract class BaseConnectionString : IConnectionString{
 
+		[ConnectionStringSerializeName("Host")]
 		public string Host { get; set; }
 
+		[ConnectionStringSerializeName("Port")]
 		public int? Port { get; set; }
 
+		[ConnectionStringSerializeName("Database")]
 		public string Database { get; set; }
 
+		[ConnectionStringSerializeName("UserId")]
 		public string UserId { get; set; }
 
+		[ConnectionStringSerializeName("Password")]
 		public string Password { get; set; }
 
 		public abstract string GenerateConnectionString();
-
-		protected internal string GenerateKeyValue(string key,string value) {
-			if (value != null) {
-				return String.Format("{0}={1};", key, value);
-			}
-			return String.Empty;
-		}
-
-		protected internal string GenerateKeyValue(string key, int? value) {
-			if (value != null) {
-				return String.Format("{0}={1};", key, value);
-			}
-			return String.Empty;
-		}
-
-		protected internal string GenerateKeyValue(string key,bool? value) {
-			if (value != null) {
-				return String.Format("{0}={1};", key, value.ToString().ToLower());
-			}
-			return String.Empty;
-		}
 
 	}
 

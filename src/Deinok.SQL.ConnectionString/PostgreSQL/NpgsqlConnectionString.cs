@@ -51,7 +51,7 @@
 		public int? ConnectionLifeTime { get; set; }
 
 		public override string GenerateConnectionString() {
-			return ConnectionStringSerializer.Serialize<NpgsqlConnectionString>(this);
+			return ConnectionStringSerializer.Serialize(this);
 		}
 
 		public enum SslMode{
@@ -60,4 +60,5 @@
 		}
 
 	}
+
 }

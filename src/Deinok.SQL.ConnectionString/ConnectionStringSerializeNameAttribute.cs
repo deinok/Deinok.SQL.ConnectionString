@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace Deinok.SQL.ConnectionString {
 
 	[AttributeUsage(AttributeTargets.Property)]

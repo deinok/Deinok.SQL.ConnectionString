@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Deinok.SQL.ConnectionString;
-using Deinok.SQL.ConnectionString.PostgreSQL;
+﻿using Deinok.SQL.ConnectionString.PostgreSQL;
 using Xunit;
 
-namespace Deinok.SQL.ConnectionString.Tests.PostgreSQL{
+namespace Deinok.SQL.ConnectionString.Tests.PostgreSQL {
 
-    public class NpgsqlConnectionStringTest{
+	public class NpgsqlConnectionStringTest{
 
 		[Fact]
 		public void StandardTest() {
